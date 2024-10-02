@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#4A86E8">
+
+
+    <!-- layout_alignParentTop="true": nằm trên đỉnh container -->
+    <TextView
+        android:id="@+id/textViewA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:textSize="24sp"
+        android:textColor="#FF0000"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"/>
+
+
+    <!--  layout_below="@id/textViewA" : nằm dưới A  -->
+    <!-- layout_toStartOf="@id/textViewC" : nằm bên trái C -->
+    <TextView
+        android:id="@+id/textViewB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"
+        android:textSize="24sp"
+        android:textColor="#FF0000"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:layout_below="@id/textViewA"
+        android:layout_toStartOf="@id/textViewC"
+        android:layout_marginTop="16dp"/>
+
+    <!--  layout_below="@id/textViewA": nằm dưới A  -->
+    <!--  layout_alignParentRight="true": nằm cạnh phải container  -->
+    <TextView
+        android:id="@+id/textViewC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:textSize="24sp"
+        android:textColor="#FF0000"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:layout_below="@id/textViewA"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
